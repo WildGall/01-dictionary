@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +11,9 @@ namespace _01___dictionary
         static void Main(string[] args)
         {
             Dictionary<string, string> teenSlangDictionary = new Dictionary<string, string>();
-            ReadTeenSlangDictionary(teenSlangDictionary);
+            FillTeenSlangDictionary(teenSlangDictionary);
 
-            while (true)
+            while (teenSlangDictionary.Any())
             {
                 Console.Write("Введите слово: ");
                 string userInput = Console.ReadLine();
@@ -29,7 +29,7 @@ namespace _01___dictionary
             }            
         }
 
-        static Dictionary<string, string> ReadTeenSlangDictionary(Dictionary<string, string> teenSlangDictionary)
+        static Dictionary<string, string> FillTeenSlangDictionary(Dictionary<string, string> teenSlangDictionary)
         {            
             teenSlangDictionary.Add("Ауф", "- кайф, круто.");
             teenSlangDictionary.Add("Байтить", "- провоцировать.");
@@ -46,7 +46,6 @@ namespace _01___dictionary
             teenSlangDictionary.Add("Овердофига ", "- очень много.");
             teenSlangDictionary.Add("Паль ", "- самая некачественная подделка.");
             teenSlangDictionary.Add("Пранк ", "- розыгрыш, шутка.");
-            return teenSlangDictionary;
         }
     }
 }
