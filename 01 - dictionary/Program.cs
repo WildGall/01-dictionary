@@ -29,7 +29,7 @@ namespace _01___dictionary
             }            
         }
 
-        static Dictionary<string, string> FillTeenSlangDictionary(Dictionary<string, string> teenSlangDictionary)
+        static void FillTeenSlangDictionary(Dictionary<string, string> teenSlangDictionary)
         {            
             teenSlangDictionary.Add("Ауф", "- кайф, круто.");
             teenSlangDictionary.Add("Байтить", "- провоцировать.");
